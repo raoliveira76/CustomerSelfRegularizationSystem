@@ -226,6 +226,8 @@ public class CSRSystem {
 			dashboard.setDebts(debts);
 			dashboard.setInstallments(installments);
 			dashboard.generateDashboard();
+			
+			conn.close();
 		} 
 		catch (SQLException e) {
 		    System.out.println(e.getMessage());  
